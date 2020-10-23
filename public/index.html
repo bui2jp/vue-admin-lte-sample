@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+  </head>
+<!--
+  BODY TAG OPTIONS:
+  =================
+  Apply one or more of the following classes to to the body tag
+  to get the desired effect
+  |---------------------------------------------------------|
+  |LAYOUT OPTIONS | sidebar-collapse                        |
+  |               | sidebar-mini                            |
+  |---------------------------------------------------------|
+-->
+  <body class="hold-transition sidebar-mini">
+    <noscript>
+      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+
+    <div class="wrapper">
+      <div id="app"></div>
+    </div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>

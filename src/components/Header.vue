@@ -1,0 +1,31 @@
+<template>
+
+  <!-- Navbar -->
+  <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+    <!-- Left navbar links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+        <!-- <a class="nav-link" @click="collapedSidebar()" ><i class="fas fa-bars"></i></a> -->
+      </li>
+    </ul>
+  </nav>
+  <!-- /.navbar -->
+
+</template>
+
+<script lang="js">
+// // eslint-disable-next-line
+import JQuery from 'jquery'
+let $ = JQuery
+export default {
+  name: 'my-header',
+  methods: {
+    collapedSidebar: function () {
+      ////サイドメニューの開閉
+      console.log('collapedSidebar start')
+      $('body').toggleClass('sidebar-collapse')
+    }
+  }
+}
+</script>
