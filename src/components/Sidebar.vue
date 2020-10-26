@@ -2,9 +2,14 @@
   <!-- Main Sidebar Container -->
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
+    <!-- <router-link class="nav-link" to="/album1">
+      <div class="brand-link">
+        <img src="../assets/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+        <span class="brand-text font-weight-light">ゆるく</span>
+      </div>
+    </router-link> -->
     <a href="#" class="brand-link">
-      <img src="../assets/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
-           style="opacity: .8">
+      <img src="../assets/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
       <span class="brand-text font-weight-light">ゆるく</span>
     </a>
 
@@ -20,23 +25,26 @@
               <!-- <i class="nav-icon fas fa-tachometer-alt"></i> -->
               <i class="nav-icon far fa-images"></i>
               <p>
-                Albam
+                Album
                 <i class="right fas fa-angle-left"></i>
               </p>
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="#" class="nav-link active">
+                <router-link class="nav-link" to="/album1">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Albam1</p>
-                </a>
+                  <p>Album1</p>
+                </router-link>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <router-link class="nav-link" to="/album2">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Albam2</p>
-                </a>
+                  <p>Album2</p>
+                </router-link>
               </li>
+              <li class="nav-item">
+                <router-link class="nav-link" to="/sample">Sample</router-link>
+              </li>              
             </ul>
           </li>
         </ul>
