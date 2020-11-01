@@ -1,12 +1,14 @@
 # vue@2.6.12 and AdminTLE3.0.5 integration example
 
+Vue と AdminTLE 3　と AWS Cognitoでの認証
+
 ```
 node -v                    
 v10.22.1
 % npm -v 
 6.14.6
 % vue --version 
-3.9.3
+3.9.3　(vuecliのバージョン)
 ```
 
 
