@@ -38,8 +38,23 @@
                   <div class="card-header">
                     <h5 class="m-0">{{ item.myTitle }}</h5>
                   </div>
-                  <img src="../assets/img/gopher.png" width="100px">
-                  <button type="button" class="btn btn-sm btn-primary">{{ item.myTitle }}</button>
+                  <img src="../assets/img/gopher.png" width="100px" />
+                  <div id="like_dislike_btn">
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-primary"
+                      @click="myButtonClick"
+                    >
+                      <i class="far fa-thumbs-up"></i>
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-danger"
+                      @click="myButtonClickBad"
+                    >
+                      <i class="far fa-thumbs-down"></i>
+                    </button>
+                  </div>
                 </div>
               </div>
             </li>
@@ -60,16 +75,26 @@ export default {
   data() {
     return {
       myItems: [
-        { myTitle: "aaa1" }, 
-        { myTitle: "aaa2" },
-        { myTitle: "aaa3" },
-        { myTitle: "aaa4" },
-        { myTitle: "aaa5" }, 
-        { myTitle: "aaa6" },
-        { myTitle: "aaa7" },
-        { myTitle: "aaa8" },
+        { myTitle: "photo1" },
+        { myTitle: "photo2" },
+        { myTitle: "photo3" },
+        { myTitle: "photo4" },
+        { myTitle: "photo5" },
+        { myTitle: "photo6" },
+        { myTitle: "photo7" },
+        { myTitle: "photo8" },
       ],
     };
+  },
+  methods: {
+    myButtonClick: function () {
+      console.log("myButtonClick !!!");
+      this.$store.commit("increment");
+    },
+    myButtonClickBad: function () {
+      console.log("myButtonClickBad !!!");
+      this.$store.commit("increment_bad");
+    },
   },
 };
 </script>
@@ -83,12 +108,18 @@ ul {
 }
 
 img {
-    margin: 0 auto;
-    padding: 15px;
+  margin: 0 auto;
+  padding: 15px;
 }
 
 button {
-    width: 100px;
-    margin: 10px auto 10px auto;
+  width: 50px;
+  margin: 10px 5px 10px 5px;
+  float: left;
+}
+
+div#like_dislike_btn{
+  margin: 0 auto;
+  padding: 10px;
 }
 </style>

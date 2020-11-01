@@ -10,13 +10,14 @@
     </router-link> -->
     <a href="#" class="brand-link">
       <img src="../assets/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
-      <span class="brand-text font-weight-light">ゆるく</span>
+      <span class="brand-text font-weight-light">サンプル</span>
     </a>
 
     <!-- Sidebar -->
     <div class="sidebar">
       <!-- Sidebar Menu -->
       <nav class="mt-2">
+
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
@@ -43,8 +44,11 @@
                 </router-link>
               </li>
               <li class="nav-item">
-                <router-link class="nav-link" to="/sample">Sample</router-link>
-              </li>              
+                <router-link class="nav-link" to="/album3">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Album3</p>
+                </router-link>
+              </li>
             </ul>
           </li>
         </ul>
@@ -57,8 +61,9 @@
 
 <script>
 // import JQuery from 'jquery'
+// // eslint-disable-next-line
 // let $ = JQuery
 export default {
-    nama: "my-sidebar"   
+    nama: "my-sidebar",
 }
 </script>
