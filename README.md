@@ -11,7 +11,6 @@ v10.22.1
 3.9.3　(vuecliのバージョン)
 ```
 
-
 ## Project setup
 ```
 npm install

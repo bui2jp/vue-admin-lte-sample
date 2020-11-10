@@ -30,7 +30,8 @@ const routes = [
         path: '/album1',
         name: 'mycontents',
         component: mycontents,
-        meta: { requiresAuth: true } //loginしている必要がある
+        meta: { requiresAuth: true }, //loginしている必要がある
+        props: { postTitle: "mycontentsのプロパティ" }
       },
       {
         path: '/album2',
